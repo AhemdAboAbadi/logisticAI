@@ -75,7 +75,7 @@ const PriceList: React.FC = () => {
       </div>
 
       {/* Choose Law Firms & Confirm Button */}
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col space-y-4 pt-2">
         <span className="text-gray-500 text-right text-sm">
           Choose Law Firms
         </span>
