@@ -1,3 +1,4 @@
+import React from "react"
 import {
   LanguageSelector,
   NotificationBell,
@@ -5,17 +6,19 @@ import {
   SearchBar,
 } from "./_components"
 
-const Header: React.FC = () => {
+const Header: React.FC = React.memo(() => {
   return (
-    <div className="flex items-center justify-between bg-white py-[30px] pr-[44px]">
+    <header
+      className="flex items-center justify-between bg-white py-7 pr-11"
+      role="navigation">
       <SearchBar />
-      <div className="flex items-center space-x-4 ">
+      <div className="flex items-center gap-4">
         <LanguageSelector />
         <NotificationBell />
         <UserProfile />
       </div>
-    </div>
+    </header>
   )
-}
+})
 
 export default Header
